@@ -23,7 +23,6 @@ The software component of AQMS consists of a web application. This web applicati
 - **Flask (Python):** Serves as the backend server, managing interactions between the front end, Firebase, and hardware devices.
 - **Firebase:**
   - **Realtime Database:** Stores and updates information related to various parameters measured by the AQMS hardware.
-  - **Firebase Storage:** Used for managing storage requirements.
   - **Google Maps API:** Integrated with JavaScript to display location-based data on the dashboard.
 
 ### Functionality Overview
