@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type=text/css href="static/styleadmin.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="main flex flex-column">
+        <div class="submain1">
+            <a href="/"><img class="logo"></a>
+            <a href="/" id="home"> Home</a>
+        </div>
+        <div class="great">
+        <h1 class="heading">Welcome to Admin Panel</h1>
+        <div class="conetent grid-two-column">
+            <div id="map"></div>
+            <div id="deployform" class="flex flex-column">
+                <div class="form">
+                    <label for="aqid">AQMSID</label>
+                    <input type="text" placeholder="WildeyeID" name="aqid" id="aqid" onkeyup="empty()">
+                    <label for="latitude">LATITUDE</label>
+                    <input type="text" placeholder="latitude" name="latitude" id="latitude" onkeyup="empty()"
+                        disabled>
+                    <label for="longitude">LONGITUDE</label>
+                    <input type="text" placeholder="longitude" name="longitude" id="longitude" onkeyup="empty()"
+                        disabled>
+                    <label for="address">ADDRESS</label>
+                    <textarea placeholder="Address" name="address" id="address" onkeyup="empty()" disabled></textarea>
+                    <div class=".btn flex">
+                        <button class="form-btn" id="locate" onclick="clicklocatee()" disabled>Location</button>
+                        <button class="form-btn" id="submit" onclick="sub()" disabled>Submit</button>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+     integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+     crossorigin=""></script>
+    <script src="static/admin.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+</body>
+</html>

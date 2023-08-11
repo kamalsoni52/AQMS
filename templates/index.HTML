@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type=text/css href="static/style.css">
+    <title>AQMS-Dashboard</title>
+</head>
+
+<body>
+    <div class="main flex flex-column">
+        <div class="submain1">
+            <a href="/"><img class="logo"></a>
+            <a href="/admin" id="admin"> Admin</a>
+        </div>
+        <div class="submain2">
+            <div class="heading">
+                <h1>Dashboard</h1>
+            </div>
+            <div class="graphs">
+                <div class="map" id="map"></div>
+            <div class="div1">
+                <h2 id="markid"><h2>
+                <div class="board" id="pm">
+                    <h4>PM2.5</h4>
+                    <h4 id="pmh"></h4>
+                </div>
+                <div class="board" id="co">
+                    <h4>AIRQ</h4>
+                    <h4 id="coh"></h4>
+                </div>
+            </div>
+            </div>
+            
+
+        </div>
+    </div>
+    <script>
+        var newdata = JSON.parse('{{ data|tojson }}');
+    </script>
+    <script src="static/script.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6e7z-m6hqRaeavTXbzX9Hbe_ydPPYY_c&callback=initMap"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+
+</body>
+
+</html>
