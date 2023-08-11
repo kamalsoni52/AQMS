@@ -38,6 +38,15 @@ The software component of AQMS consists of a web application. This web applicati
 Check out the live demo video of AQMS web application:
 [Demo Link](https://youtu.be/t6AHUPHr7og)
 
+## Website Snapshots
+
+<p align="center">
+  <img src="./AQMS-snapshots/AQMS-dashboard.png" alt="Snapshot 1" width="50%"/>
+  <img src="./AQMS-snapshots/device-deploye-1.png" alt="Snapshot 2" width="50%"/>
+  <img src="./AQMS-snapshots/device-deploy-2.png" alt="Snapshot 3" width="50%"/>
+  <img src="./AQMS-snapshots/realtime-database.png" alt="Snapshot 4" width="50%"/>
+</p>
+
 
 ## How it Works
 
@@ -47,7 +56,15 @@ Check out the live demo video of AQMS web application:
 4. The web application fetches data from the Firebase Realtime Database and displays it on the dashboard in real time.
 5. Users can interact with the dashboard to monitor air quality at different locations.
 
+## Credits
+
+This project was developed by Kamal Soni and Mukul Agrawal, inspired by the need to monitor the quality of the air surrounding us.
+  
+## Contact
+
+Feel free to reach out to webdevkamal@gmail.com with any questions or inquiries.
+
 Please note that this README provides an overview of the AQMS project. For detailed implementation steps and code examples, refer to the project's source code and documentation.
 
-For detailed implementation steps and code examples, refer to the project's source code and documentation.
+
 
